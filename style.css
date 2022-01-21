@@ -1,0 +1,304 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  font-size: xx-large;
+  border-bottom: solid 1px black;
+}
+
+.header .blogname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.header .logos button {
+  border-style: hidden;
+  background-color: transparent;
+  margin-right: 7%;
+}
+
+.header .logos a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8em;
+}
+
+.header .logos a:hover {
+  color: darkgrey;
+}
+
+.header .logos a:visited {
+  color: black;
+}
+
+.header .logos a img {
+  height: 30px;
+  width: 30px;
+}
+
+nav {
+  padding: 30px;
+  background-color: white;
+  border-bottom: solid 1px black;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 27px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+
+.container-grid {
+  margin-top: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (30%)[8];
+      grid-template-rows: repeat(8, 30%);
+  gap: 20px;
+  width: 100%;
+  height: 80vh;
+}
+
+.container-grid span {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  opacity: 0.7;
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  bottom: 0;
+  /* height:7vh; für jedes Gerät unterschiedlich*/
+}
+
+.container-grid .pic1 {
+  background: url("pics/pic1.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 1/2/3/4;
+}
+
+.container-grid .pic2 {
+  background: url("pics/pic2.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 1/4/3/6;
+}
+
+.container-grid .pic3 {
+  background: url("pics/pic3.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 1/6/3/8;
+}
+
+.container-grid .pic4 {
+  background: url("pics/pic4.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 3/2/5/4;
+}
+
+.container-grid .pic5 {
+  background: url("pics/pic5.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 3/4/5/6;
+}
+
+.container-grid .pic6 {
+  background: url("pics/pic6.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 3/6/5/8;
+}
+
+.container-grid .pic7 {
+  background: url("pics/pic7.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 5/2/7/4;
+}
+
+.container-grid .pic8 {
+  background: url("pics/pic8.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 5/4/7/6;
+}
+
+.container-grid .pic9 {
+  background: url("pics/pic9.jpg");
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 5/6/7/8;
+}
+
+.container-grid .footer {
+  height: 20vh;
+  margin-top: -10%;
+  text-align: center;
+  padding-top: 2%;
+  color: white;
+  background-color: black;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-area: 8/1/9/9;
+}
+
+.container-grid .footer .footerlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: large;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 1%;
+}
+
+.container-grid .footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-grid .footer a:hover {
+  color: darkgrey;
+}
+
+.container-grid .footer a:visited {
+  color: white;
+}
+
+.container-grid .footer .piclinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-grid .footer .piclinks a {
+  padding: 1%;
+}
+
+.container-grid .footer .piclinks img {
+  width: 15px;
+  height: 15px;
+}
+/*# sourceMappingURL=style.css.map */
