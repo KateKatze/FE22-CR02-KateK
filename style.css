@@ -23,39 +23,25 @@ body {
       flex-wrap: wrap;
   font-style: italic;
   font-family: "Dancing Script", cursive;
-  font-size: xx-large;
+  font-size: large;
   border-bottom: solid 1px black;
-}
-
-.header .blogname {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header .logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px;
-}
-
-.header .logos button {
-  border-style: hidden;
-  background-color: transparent;
-  margin-right: 7%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1px;
 }
 
 .header .logos a {
   text-decoration: none;
   color: black;
-  font-size: 1.8em;
+  font-size: 1.2em;
+  margin-right: 10%;
 }
 
 .header .logos a:hover {

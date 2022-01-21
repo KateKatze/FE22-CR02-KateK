@@ -39,44 +39,31 @@ body{
     flex-wrap: wrap;
     font-style: italic;
     font-family: $font-nice;
-    font-size: xx-large;
+    font-size: large;
     border-bottom: solid 1px $color-dark;
     
-    & .blogname{
-    display: flex;
-    align-items:center;
-    }
-
-    & .logos{
-        display: flex;
-        align-items: center;
-        padding: 5px;
+        & .logos{
+        padding: 2px;
     
-    & button{
-        border-style: hidden;
-        background-color: transparent;
-        margin-right: 7%;
-    }
-
-    & a{
-    text-decoration: none;
-    color: $color-dark;
-    font-size:1.8em;
-    }
-
-    & a:hover{
-        color:darkgrey;
-    }
-
-    & a:visited{
+        & a{
+        text-decoration: none;
         color: $color-dark;
-    }
+        font-size: 1.2em;
+        margin-right: 10%;
+        }
 
-    & a img{
+        & a:hover{
+        color:darkgrey;
+        }
+
+        & a:visited{
+        color: $color-dark;
+        }
+
+        & a img{
         height:30px;
         width:30px;
-    }
-    }
+        }
 }
 
 nav{
@@ -215,9 +202,109 @@ nav{
     }
 }
 
-// @media screen and (min-width: $breakpoint-desktop-min) {
-    
+// .container-rotm {
+//     width: 800px;
+//     justify-content: center;
+//     margin: 0 auto;
+//     padding-right: 50px;
+//     padding-left: 50px;
+
+// header {
+//     margin-top: 6%;
+//     margin-bottom: 6%;
+//     text-align: center;
 // }
+
+// h1, h2, h3 {
+//     margin-top: 5%;
+//     font-family: $font-nice;
+//     text-align: center;
+//     font-size: xx-large;
+// }
+
+// .photosalad {
+//     background-color: lightgrey;
+//     text-align: center;
+//     padding: 5px;
+// }
+
+//     & img{
+//     margin-top: 7%;
+//     border-radius: 2%;
+//     }
+
+// li {
+//     padding-top: 5px;
+//     padding-bottom: 5px;
+// }
+
+// a{
+//     text-decoration: none;
+//     color: $color-dark;
+
+//     &:hover{
+//         color:grey;
+//     }
+
+//     &:visited{
+//         color:$color-dark;
+//     }
+// }
+// }
+
+// .footer-rotm{
+//     width: 100%;
+//     height:20vh;
+//     margin-top: 6%;
+//     text-align: center;
+//     padding-top: 2%;
+//     color: $color-background;
+//     background-color: $color-dark;
+    
+
+//     & .footerlinks{
+//         display: flex;
+//         justify-content: space-around;
+//         font-size: large;
+//         padding-left: 10%;
+//         padding-right: 10%;
+//         margin-bottom: 1%;
+//     }
+
+//     & a{
+//         text-decoration: none;
+//         color: $color-background;
+//     }
+
+//     & a:hover{
+//         color: darkgrey;
+//     }
+
+//     & a:visited{
+//         color: $color-background;
+//     }
+
+//     & .piclinks {
+//         display: flex;
+//         justify-content: center;
+//     }
+
+//     & .piclinks a{
+//         padding: 1%;
+//     }
+
+//     & .piclinks img{
+//         width: 15px;
+//         height: 15px;
+//     }
+
+//     & .textfooter{
+//         color:$color-background;
+//     }
+// }
+
+@media screen and (min-width: $breakpoint-desktop-min) {
+}
 
 // @media screen and (min-width: $breakpoint-laptop-min) and (max-width: $breakpoint-laptop-max) {
 //     .header {
