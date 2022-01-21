@@ -79,26 +79,21 @@ body{
 }
 
 .navigation{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: $color-background;
     border-bottom: solid 1px $color-dark;
 
     & ul{
+    display: flex;
+    justify-content: space-around;
     list-style-type: none;
     }
 
     & ul li{
     display: inline-block;
-    flex-wrap: wrap;
-    padding-left: 10px;
     }
 
     & ul li a{
     text-decoration: none;
-    color: black;
-    font-size: larger;
+    color: $color-dark;
     }
 }
 
@@ -235,6 +230,10 @@ body{
     }
 
     .navigation{
+        & ul li{
+        margin-left: -45px;   
+        }
+            
         & ul li a{
         text-decoration: none;
         color: black;
@@ -283,7 +282,7 @@ body{
 
     .navigation{
         & ul li{
-        padding-left: 8px;
+        margin-left: -45px;   
         }
 
         & ul li a{
@@ -331,12 +330,12 @@ body{
     }
 
     .navigation{
-        & ul{
-        padding:0;
+        & ul li{
+        margin-left: -45px;   
         }
 
         & ul li a{
-        font-size: 0.5em;
+        font-size: 0.7em;
         }
     }
 
@@ -413,11 +412,11 @@ body{
 @media screen and (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
     .header {
         & .blogname h1{
-        font-size: 1.6em;
+        font-size: 1.4em;
         }
     
         & .logos button a{
-        font-size: 1em;
+        font-size: 0.9em;
         }
     
         & .logos a img{
@@ -427,12 +426,13 @@ body{
     }
 
     .navigation{
-        & ul{
-        padding:0;
+        & ul li{
+        margin-left: -25px; 
+        margin-right: 15px;  
         }
 
         & ul li a{
-        font-size: 0.7em;
+        font-size: 0.4em;
         }
     }
 
@@ -484,11 +484,11 @@ body{
             & .footer{
             margin-top: 2%;
             height:17vh;
-            padding-top: 5%;
+            padding-top: 3%;
             grid-area: 10/1/10/9;
                         
             & .footerlinks{
-            font-size: 0.8em;
+            font-size: 0.6em;
             padding-left: 10%;
             padding-right: 10%;
             margin-bottom: 5%;
