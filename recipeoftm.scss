@@ -1,0 +1,326 @@
+@import "partials/variables";
+
+body{
+    margin: 0;
+    font-family: $font-normal;
+    background-color: $color-background;
+}
+
+.header {
+    display: flex;
+    background-color: $color-background;
+    align-items:center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-wrap: wrap;
+    border-bottom: solid 1px $color-dark;
+
+
+    & .blogname h1{
+    color:$color-dark;
+    font-style: italic;
+    font-family: $font-nice;
+    font-size: xx-large;
+    }
+
+    & .logos{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    }
+
+    & .logos button{
+    border-style: hidden;
+    background-color: transparent;
+    margin-right: 7%;
+    }
+
+    & .logos a{
+    text-decoration: none;
+    color: $color-dark;
+    font-size:1.4em;
+    }
+
+    & .logos a:hover{
+    color:darkgrey;
+    }
+
+    & .logos a:visited{
+    color: $color-dark;
+    }
+
+    & .logos a img{
+    height:30px;
+    width:30px;
+    }
+}
+
+.navigation{
+    border-bottom: solid 1px $color-dark;
+
+    & ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: -29px;
+    margin-right: 28px;
+    }
+
+    & ul li{
+    display: inline-block;
+    }
+
+    & ul li a{
+    text-decoration: none;
+    color: $color-dark;
+    }
+}
+
+.maininfo h1, h4{
+    margin-top: 3%;
+    font-family: $font-nice;
+    text-align: center;
+}
+.container{
+    width: 800px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    .header {
+    text-align: center;
+    }
+    
+    .photosalad {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 5px;
+    }
+
+    .photosalad img{
+    margin-top: 7%;
+    border-radius: 2%;
+    }
+    
+    .ingredients{
+    & h3{
+        text-align: center;
+        font-family: $font-nice;
+        font-size: x-large;
+    }
+
+    & li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        list-style-type: circle;
+        font-style: italic;
+    }
+    }
+
+    .directions{
+        & h3{
+        text-align: center;
+        font-family: $font-nice;
+        font-size: x-large;
+        }
+
+        & li {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        }
+    }
+
+    .credentials{
+
+        & h3{
+        text-align: center;
+        font-family: $font-nice;
+        font-size: x-large;
+        }
+
+        & a{
+        text-decoration: none;
+        color: $color-dark;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        }
+
+        & a:hover{
+        color:darkgrey;
+        }
+}
+}
+
+.footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+    padding-top: 2%;
+    color: $color-background;
+    background-color: $color-dark;
+    height: 10vh;  
+    
+    & .textfooter p{
+    font-size: 1em;
+    }
+}
+
+@media screen and (min-width: $breakpoint-laptop-min) and (max-width: $breakpoint-laptop-max) {
+    
+    .header {    
+        & .logos a img{
+        height:25px;
+        width:25px;
+        }
+    }
+    
+    .navigation{
+        & ul{
+            margin-left: -29px;
+            margin-right: 27px;
+        }    
+    }
+    
+    .maininfo h1, h4{
+        margin-top: 4%;
+    }
+    .container{
+        width: 650px;
+        
+        .photosalad {
+        padding: 5px;
+        }
+    
+        .photosalad img{
+        margin-top: 7%;
+        border-radius: 2%;
+        }
+    }
+    
+    .footer{
+        height: 12vh;  
+        
+        & .textfooter p{
+        font-size: 1em;
+        }
+    }
+    
+}
+
+@media screen and (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+    .header {    
+        & .logos a img{
+        height:25px;
+        width:25px;
+        }
+    }
+    
+    .navigation{
+        & ul{
+            font-size: small;
+            margin-left: -29px;
+            margin-right: 25px;
+        }
+    }
+    
+    .maininfo h1, h4{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .container{
+        width: 400px;
+        
+        .photosalad {
+        padding: 5px;
+        }
+    
+        .photosalad img{
+        margin-top: 7%;
+        border-radius: 2%;
+        height: 200px;
+        }
+    }
+    
+    .footer{
+        height: 12vh;
+        margin-top: 9%;  
+        
+        & .textfooter p{
+        font-size: 0.9em;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max) {
+    .header { 
+        
+        & .logos button {
+            font-size: x-small;
+        }
+        & .logos a img{
+        height:17px;
+        width:17px;
+        }
+    }
+    
+    .navigation{
+        & ul{
+            font-size: xx-small;
+            margin-left: -26px;
+            margin-right: 15px;
+        }
+    }
+    
+    .maininfo h1, h4{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container{
+        width: 240px;
+        
+        .photosalad {
+        padding: 1px;
+        font-size: x-small;
+        }
+    
+        .photosalad img{
+        margin-top: 7%;
+        border-radius: 2%;
+        height: 150px;
+        }
+    }
+
+    .ingredients {
+        font-size: x-small;
+        margin-left: -10px;
+        margin-right: 15px;
+    }
+
+    .directions {
+        font-size: x-small;
+        margin-left: -10px;
+        margin-right: 15px;
+    }
+
+    .credentials {
+        font-size: x-small;
+        margin-left: -10px;
+        margin-right: 15px;
+    }
+    
+    .footer{
+        height: 9vh;
+        margin-top: 9%;  
+        
+        & .textfooter p{
+        font-size: 0.7em;
+        }
+    }
+}
