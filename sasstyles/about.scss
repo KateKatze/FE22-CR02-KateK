@@ -136,12 +136,21 @@ footer {
             font-size: 90%;
         }
     }
+
+    .container{
+        position: relative;
+        flex-wrap: row wrap;
+    }
+
     .photos {
         margin: 5px;
         width: 50%;
         border: 1px solid #ccc;
     }
     footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
         h6 {
             font-size: 60%;
         }

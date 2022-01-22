@@ -109,14 +109,16 @@ body {
 }
 
 .container .photosalad {
-  background-color: lightgrey;
+  background-color: white;
   text-align: center;
-  padding: 5px;
+  padding: 1px;
 }
 
 .container .photosalad img {
   margin-top: 7%;
   border-radius: 2%;
+  height: 80%;
+  width: 80%;
 }
 
 .container .ingredients h3 {
@@ -227,7 +229,7 @@ body {
     margin: 0 auto;
   }
   .container {
-    width: 400px;
+    width: 290px;
   }
   .container .photosalad {
     padding: 5px;
@@ -235,10 +237,11 @@ body {
   .container .photosalad img {
     margin-top: 7%;
     border-radius: 2%;
-    height: 200px;
+    height: 220px;
+    width: 220px;
   }
   .footer {
-    height: 12vh;
+    height: 9vh;
     margin-top: 9%;
   }
   .footer .textfooter p {
@@ -266,7 +269,7 @@ body {
     margin: 0 auto;
   }
   .container {
-    width: 240px;
+    width: 210px;
   }
   .container .photosalad {
     padding: 1px;
@@ -293,7 +296,7 @@ body {
     margin-right: 15px;
   }
   .footer {
-    height: 9vh;
+    height: 7vh;
     margin-top: 9%;
   }
   .footer .textfooter p {
