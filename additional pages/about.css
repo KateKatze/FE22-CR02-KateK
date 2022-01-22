@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkgrey;
+}
+
+header {
+  text-align: center;
+}
+
+.topnav {
+  background-color: #161b22;
+}
+
+.topnav a {
+  color: white;
+}
+
+.topnav:hover {
+  background-color: black;
+}
+
+.topnav:visited {
+  color: grey;
+}
+
+.topnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  margin: 0;
+  list-style: none;
+}
+
+.topnav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+}
+
+.container .photos {
+  margin: 5px;
+  width: 30%;
+  border: 1px solid #ccc;
+}
+
+.container .photos:hover {
+  border: 1px solid #667072;
+}
+
+.container .photos img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #161b22;
+  color: white;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: -30px;
+  padding: 1%;
+}
+
+@media screen and (min-width: 1025px) {
+  .topnav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topnav a {
+    font-size: 100%;
+  }
+  header h1 {
+    font-size: 240%;
+  }
+  header p {
+    font-size: 100%;
+  }
+  .photos {
+    margin: 5px;
+    width: 10%;
+    border: 1px solid #ccc;
+  }
+  footer {
+    height: 10vh;
+  }
+  footer h6 {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .topnav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topnav a {
+    font-size: 90%;
+  }
+  header h1 {
+    font-size: 180%;
+  }
+  header p {
+    font-size: 100%;
+  }
+  .photos {
+    margin: 5px;
+    width: 30%;
+    border: 1px solid #ccc;
+  }
+  footer h6 {
+    font-size: 70%;
+    height: 1vh;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .topnav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topnav a {
+    font-size: 80%;
+  }
+  header h1 {
+    font-size: 160%;
+  }
+  header p {
+    font-size: 90%;
+  }
+  .photos {
+    margin: 5px;
+    width: 50%;
+    border: 1px solid #ccc;
+  }
+  footer h6 {
+    font-size: 60%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .topnav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -25px;
+  }
+  a {
+    font-size: 60%;
+  }
+  header h1 {
+    font-size: 170%;
+  }
+  header p {
+    font-size: 90%;
+  }
+  .container {
+    position: relative;
+    -ms-flex-wrap: row wrap;
+        flex-wrap: row wrap;
+  }
+  .photos {
+    border: 1px solid #ccc;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  footer h6 {
+    font-size: 50%;
+  }
+}
+/*# sourceMappingURL=about.css.map */
